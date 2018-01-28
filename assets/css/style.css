@@ -52,6 +52,9 @@ nav {
 
 
 .main {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
     width: 75%;
     display: inline-block;
     padding-bottom: 40px; 
@@ -63,6 +66,7 @@ nav {
 
 .sidebar {
     width: 20%;
+    margin-top: 20px;
     display: inline-block;
     text-align: center;
     vertical-align: top;
@@ -189,6 +193,11 @@ label, input {
     display: block;
 }
 
+/* I tried to adjust the width of the text area, however each time I had a higher set of pixels while using full screen, it would ruin the text area in the smaller breakpoints */
+/* textarea {
+    width: 500px;
+} */
+
 .button {
     padding-top: 15px;
     padding-left: 20px;
@@ -274,7 +283,7 @@ placeholder {
 }
 
 textarea {
-    min-width: 500px;
+    min-width: 175px;
     min-height: 200px;
 }
 
@@ -292,148 +301,203 @@ button {
 }
 
 @media screen and (max-width: 640px) {
+    .logo {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .li {
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+
     .main {
         width: 100%;
         display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .sidebar {
         width: 100%;
         display: block;
+        margin-bottom: 20px;
     }
+
+    label {
+        text-align: left;
+    }
+
+    textarea {
+        min-width: 400px;
+        min-height: 200px;
+    }
+    
+    input {
+        min-width: 400px;
+    }
+
+    #hangman {
+        left: 198px; 
+    }
+
+    #rpg {
+        top: 292px; 
+        left: 196px;
+    }
+    
+    #trivia {
+        top: 496px; 
+        left: 198px; 
+    }
+    
+    #widget {
+        top: 695px; 
+        left: 196px;   
+    }
+    
+    #rps {
+        top: 901px; 
+        left: 198px; 
+    }
+
 }
 
-/* @media screen and (max-width: 640px) { */
-/* @media screen and (max-width: 640px) { */
-
+@media screen and (max-width: 768px) {
+  
+    .main {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        display: block;
+        margin-left: 91px;
+        text-align: left;
+    }
     
-    /* .image {
-        float:none;
+    .sidebar {
+        display: block;
+        margin-left: 90px;
+        margin-bottom: 20px;
+        width: 75%;
         text-align: center;
     }
 
-    .main {
-        width: 60%;
-        margin-bottom: 10px;
-        display: block;
+    .resize {
+        margin-left: auto;
+        margin-right: auto;
     }
 
+    #hangman {
+        left: 80px; 
+    }
+
+    #rpg {
+        top: 292px; 
+        left: 77px;
+    }
+    
+    #trivia {
+        top: 496px; 
+        left: 79px; 
+    }
+    
+    #widget {
+        top: 695px; 
+        left: 77px;   
+    }
+    
+    #rps {
+        top: 901px; 
+        left: 77px; 
+    }
+
+    .images {
+        padding-left: 0
+    }
+
+    textarea {
+        max-width: 250px;
+    }
+
+}
+
+@media screen and (max-width: 980px) {
+
+    header {
+        height: 83px;
+    }
+    
+    .main {
+        margin-top: 20px;
+        width: 50%;
+        padding-bottom: 0;
+        text-align: center;
+    }
+    
+    h2 {
+        text-align: left;
+    }
     .sidebar {
-        margin-top: 10px;
-        width: 60%;
-        display: block;
-        margin-bottom: 30px;
-        padding-right: 20px;
+        margin-top: 20px;
+        margin-left: 20px;
     }
 
     footer {
         margin-top: 20px;
-    }
-    
-    header {
-        margin-left: 0px;
-        width: 100%;
-    }
-
-    .logo {
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .links {
-        padding-top: 15px;
-        width: 100%;
-        height: 50px;
-        background-color: white;
-    }
-
-    li {
-        padding: 0;
-    }
-
-    nav {
-        float: none;
-        text-align: center;
-        width: 100%;
-    }
-} */
-/* 
-@media screen and (max-width: 768px) {
-  
-    /* .main-header {
-        width: 768px;
     }
 
     .image {
         float: none;
-        text-align: center;
     }
 
-    .name-logo {
-        width: 60px;
+    .form {
+        text-align: left;
     }
 
-    .links {
-        vertical-align: top;
+    h2 {
+        text-align: left;
     }
 
-    .main {
-        width: 30%;
-        margin-bottom: 10px;
-        float: none;
-    }
-
-    .sidebar {
-        margin-top: 10px;
-        width: 100%%;
-        float: left;
-        margin-bottom: 30px;
-        padding-right: 20px;
-    }
-
-    footer {
-        margin-top: 20px;
+    textarea {
+        min-width: 290px;
+        min-height: 200px;
     }
     
-    header {
-        margin-left: 0px;
+    input {
+        min-width: 250px;
     }
 
-    .logo {
-        width: 25%;
-        margin-left: 0;
-        height: 100%;
+    /* .images {
+        padding-left: 129px;
+    } */
+
+    /* it seemed like everytime I refreshed my portfolio page on 980 the images moved out of place, then I would adjust the padding, refresh, and they would move again */
+
+    #hangman {
+        left: 130px; 
     }
 
-    .links {
-        padding-top: 15px;
-        width: 75%;
-        height: 50px;
-        background-color: white;
+    #rpg {
+        top: 296px; 
+        left: 128px;
     }
-
-    li {
-        padding: 0;
-    }
-
-    nav {
-        float: none;
-        text-align: center;
-        width: 100%;
-    } 
     
+    #trivia {
+        top: 499px; 
+        left: 130px; 
+    }
+    
+    #widget {
+        top: 698px; 
+        left: 128px;   
+    }
+    
+    #rps {
+        top: 903px; 
+        left: 130px; 
+    }
 
-}  */
-
-
-/* // Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) { ... }
-
-// Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) { ... }
-
-// Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) { ... } */
+}
 
 
 
